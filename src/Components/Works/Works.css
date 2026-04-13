@@ -1,0 +1,110 @@
+#works {
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.worksTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.worksDesc {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #aaa;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.worksGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 65rem;
+}
+
+.worksCard {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  background: #1a1a2e;
+}
+
+.worksImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.worksCard:hover .worksImg,
+.worksCardActive .worksImg {
+  transform: scale(1.08);
+}
+
+.worksOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+}
+
+.worksCard:hover .worksOverlay,
+.worksCardActive .worksOverlay {
+  opacity: 1;
+}
+
+.worksOverlay h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: yellow;
+}
+
+.worksOverlay p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #ddd;
+}
+
+@media screen and (max-width: 840px) {
+  .worksGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .worksTitle {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .worksGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .worksTitle {
+    font-size: 1.75rem;
+  }
+
+  .worksOverlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}

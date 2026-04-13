@@ -1,21 +1,25 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 import './intro.css'
-import bg from '../../assets/bg.png'
-import hireMe from '../../assets/hireMe.png'
+import bg from '../../assets/image.png'
+import btnImg from '../../assets/hireMe.png'
+
 
 
 const Intro = () => {
   return (
-   <section id='intro'>
-   <div className='introContent'>
-    <span className='hello'>Hello, my name is</span>
-    <span className ='introText'>I am <span className='introName'>Samarth</span><br/>website developer</span>
-    </div>
-     <img src={bg} alt="Profile" className='introImg'/>
-    <p className='introPara'>I am a passionate frontend developer with experience in building web applications using React.js and other related technologies.</p>
-    <Link to='/contact'><button className='btn'><img src={hireMe} alt="" className='btnImg'/>Contact Me</button></Link>
-   </section>
+    <section id='intro'>
+      <div className='introContent'>
+        <span className='hello'>Hello, my name is</span>
+        <span className='introText'>I am <span className='introName'>Samarth</span><br />website developer</span>
+      <p className='introPara'>I am a passionate frontend developer with experience in building<br /> web applications using React.js and other related technologies.</p>
+        <ScrollLink to='contact' spy={true} smooth={true} offset={-50} duration={500} className='btn'>
+          <img src={btnImg} alt="Hire" className='btnImg' />
+          Hire Me
+        </ScrollLink>
+      </div>
+      <img src={bg} alt="Profile" className='bg' />
+    </section>
   )
 }
 
