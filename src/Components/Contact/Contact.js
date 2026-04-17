@@ -2,10 +2,12 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import './Contact.css'
 import contact from '../../assets/contact.png'
-import facebook from '../../assets/facebook.png'
-import instagram from '../../assets/instagram.png'
-import twitter from '../../assets/twitter.png'
-import youtube from '../../assets/youtube.png'
+// import facebook from '../../assets/facebook.png'
+// import instagram from '../../assets/instagram.png'
+// import twitter from '../../assets/twitter.png'
+// import youtube from '../../assets/youtube.png'
+import github from '../../assets/github.png'
+import linkedin from '../../assets/linkedin.png'
 
 const Contact = () => {
   const form = useRef()
@@ -39,7 +41,7 @@ const Contact = () => {
         <div className='contactLeft'>
           <img src={contact} alt='contact' className='contactImg' />
           <div className='socialIcons'>
-            <a href='https://facebook.com' target='_blank' rel='noreferrer'>
+            {/* <a href='https://facebook.com' target='_blank' rel='noreferrer'>
               <img src={facebook} alt='Facebook' className='socialIcon' />
             </a>
             <a href='https://instagram.com' target='_blank' rel='noreferrer'>
@@ -50,7 +52,16 @@ const Contact = () => {
             </a>
             <a href='https://youtube.com' target='_blank' rel='noreferrer'>
               <img src={youtube} alt='YouTube' className='socialIcon' />
+            </a> */}
+
+             <a href='https://www.linkedin.com/in/samarth-gupta-6ab462206' target='_blank' rel='noreferrer'>
+            <img src={linkedin} alt='LinkedIn' />
+          </a>
+          <a href='https://github.com/Samarth7909/' target='_blank' rel='noreferrer'>
+            <img src={github} alt='github' />
             </a>
+
+
           </div>
         </div>
 

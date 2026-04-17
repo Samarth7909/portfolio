@@ -1,9 +1,11 @@
 import './Footer.css'
-import logo from '../../assets/logo.png'
+//import logo from '../../assets/logo.png'
 import facebook from '../../assets/facebook.png'
 import instagram from '../../assets/instagram.png'
 import twitter from '../../assets/twitter.png'
 import youtube from '../../assets/youtube.png'
+
+
 import { Link as ScrollLink } from 'react-scroll'
 
 const Footer = () => {
@@ -11,7 +13,7 @@ const Footer = () => {
     <footer id='footer'>
       <div className='footerTop'>
         <div className='footerBrand'>
-          <img src={logo} alt='Logo' className='footerLogo' />
+          {/* <img src={logo} alt='Logo' className='footerLogo' /> */}
           <p className='footerTagline'>Building beautiful web experiences.</p>
         </div>
 
@@ -35,6 +37,7 @@ const Footer = () => {
           <a href='https://youtube.com' target='_blank' rel='noreferrer'>
             <img src={youtube} alt='YouTube' />
           </a>
+         
         </div>
       </div>
 
