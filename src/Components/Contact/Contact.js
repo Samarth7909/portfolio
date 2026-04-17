@@ -15,16 +15,15 @@ const Contact = () => {
 
     emailjs
       .sendForm('service_3l1gfa4', 'template_jhochjl', form.current, {
-        publicKey: 'krS4MQ9_XGx1AUr9wGSpS',
+        publicKey: 'EoqW0NSDnvOup0j4e',
       })
       .then(
         (result) => {
-          console.log('result.text!');
           e.target.reset();
-          alert('Email send')
+          alert('Message sent successfully!')
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          alert('Failed to send message: ' + error.text)
         },
       );
   };
@@ -58,7 +57,7 @@ const Contact = () => {
         <form ref={form} className='contactForm' onSubmit={handleSubmit}>
           <input type='text' className='contactInput' placeholder='Your Name' required name ='your_name'/>
           <input type='email' className='contactInput' placeholder='Your Email' required name ='your_email' />
-          <textarea className='contactInput msgInput' placeholder='Your Message' rows={6} required />
+          <textarea className='contactInput msgInput' placeholder='Your Message' rows={6} required name='message' />
           <button type='submit' className='contactBtn'>Send Message</button>
         </form>
       </div>

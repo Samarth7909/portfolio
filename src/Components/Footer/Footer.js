@@ -4,7 +4,7 @@ import facebook from '../../assets/facebook.png'
 import instagram from '../../assets/instagram.png'
 import twitter from '../../assets/twitter.png'
 import youtube from '../../assets/youtube.png'
-import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 
 const Footer = () => {
   return (
@@ -16,10 +16,10 @@ const Footer = () => {
         </div>
 
         <div className='footerLinks'>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/projects'>Portfolio</Link>
-          <Link to='/contact'>Contact</Link>
+          <ScrollLink to='intro' smooth={true} offset={-100} duration={500}>Home</ScrollLink>
+          <ScrollLink to='skills' smooth={true} offset={-50} duration={500}>About</ScrollLink>
+          <ScrollLink to='works' smooth={true} offset={-50} duration={500}>Portfolio</ScrollLink>
+          <ScrollLink to='contact' smooth={true} offset={-50} duration={500}>Contact</ScrollLink>
         </div>
 
         <div className='footerSocials'>
