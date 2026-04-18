@@ -1,8 +1,7 @@
-import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
-import './intro.css'
-import bg from '../../assets/image.png'
 import btnImg from '../../assets/hireme.png'
+import bg from '../../assets/image.png'
+import './intro.css'
 
 
 

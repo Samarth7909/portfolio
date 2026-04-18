@@ -8,12 +8,12 @@ import p6 from '../../assets/portfolio-6.png'
 import './Works.css'
 
 const projects = [
-  { id: 1, src: p1, title: 'Project One', desc: 'React.js web application' },
-  { id: 2, src: p2, title: 'Project Two', desc: 'Full stack MERN project' },
-  { id: 3, src: p3, title: 'Project Three', desc: 'UI/UX design & development' },
-  { id: 4, src: p4, title: 'Project Four', desc: 'Frontend React project' },
-  { id: 5, src: p5, title: 'Project Five', desc: 'Java backend application' },
-  { id: 6, src: p6, title: 'Project Six', desc: 'Responsive website design' },
+  // { id: 1, src: p1, title: 'Project One', desc: 'React.js web application' },
+  // { id: 6, src: p6, title: 'Project Six', desc: 'Responsive website design' },
+  // { id: 3, src: p3, title: 'Project Three', desc: 'UI/UX design & development' },
+  { id: 2, src: p2, title: 'Job_portal', desc: 'Full stack MERN project' },
+  { id: 4, src: p4, title: 'Quick_Chat', desc: 'Frontend React project' },
+  { id: 5, src: p5, title: 'Scalable_cloud service', desc: 'Java backend application' },
 ]
 
 const Works = () => {
