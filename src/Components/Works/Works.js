@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import './Works.css'
+import { useState } from 'react'
 import p1 from '../../assets/portfolio-1.png'
 import p2 from '../../assets/portfolio-2.png'
 import p3 from '../../assets/portfolio-3.png'
 import p4 from '../../assets/portfolio-4.png'
 import p5 from '../../assets/portfolio-5.png'
 import p6 from '../../assets/portfolio-6.png'
+import './Works.css'
 
 const projects = [
   { id: 1, src: p1, title: 'Project One', desc: 'React.js web application' },
@@ -22,7 +22,7 @@ const Works = () => {
   return (
     <section id='works'>
       <span className='worksTitle'>My Portfolio</span>
-      <span className='worksDesc'>Here are some of my recent projects.</span>
+      <span className='worksDesc'>Here are some of my recent projects.</span> <span>please check git repo some projects are left for deployment</span>
 
       <div className='worksGrid'>
         {projects.map((p) => (
