@@ -12,7 +12,7 @@ const projects = [
   // { id: 6, src: p6, title: 'Project Six', desc: 'Responsive website design' },
   // { id: 3, src: p3, title: 'Project Three', desc: 'UI/UX design & development' },
   { id: 2, src: p2, title: 'Job_portal', desc: 'Full stack MERN project' },
-  { id: 4, src: p4, title: 'Quick_Chat', desc: 'Frontend React project' },
+  { id: 4, src: p4, title: 'Quick_Chat', desc: 'Frontend React project', url: 'https://chat-app-taupe-one-98.vercel.app' },
   { id: 5, src: p5, title: 'Scalable_cloud service', desc: 'Java backend application' },
 ]
 
@@ -29,7 +29,7 @@ const Works = () => {
           <div
             key={p.id}
             className={`worksCard ${active === p.id ? 'worksCardActive' : ''}`}
-            onClick={() => setActive(active === p.id ? null : p.id)}
+            onClick={() => p.url ? window.open(p.url, '_blank') : setActive(active === p.id ? null : p.id)}
           >
             <img src={p.src} alt={p.title} className='worksImg' />
             <div className='worksOverlay'>
