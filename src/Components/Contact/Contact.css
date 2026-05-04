@@ -138,6 +138,10 @@
   .contactImg {
     max-width: 10rem;
   }
+
+  .contactForm {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -145,9 +149,18 @@
     font-size: 2rem;
   }
 
+  .contactDesc {
+    font-size: 0.9rem;
+  }
+
   .contactBtn {
     width: 100%;
     text-align: center;
     justify-content: center;
+  }
+
+  .socialIcon {
+    width: 1.75rem;
+    height: 1.75rem;
   }
 }

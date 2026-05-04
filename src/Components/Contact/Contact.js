@@ -55,10 +55,10 @@ const Contact = () => {
             </a> */}
 
              <a href='https://www.linkedin.com/in/samarth-gupta-6ab462206' target='_blank' rel='noreferrer'>
-            <img src={linkedin} alt='LinkedIn' />
+            <img src={linkedin} alt='LinkedIn' className='socialIcon' />
           </a>
           <a href='https://github.com/Samarth7909/' target='_blank' rel='noreferrer'>
-            <img src={github} alt='github' />
+            <img src={github} alt='github' className='socialIcon' />
             </a>
 
 
