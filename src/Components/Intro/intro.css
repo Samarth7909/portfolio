@@ -84,14 +84,14 @@
 }
 
 .btnOutline {
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  color: white;
+  background: yellow;
+  border: 2px solid yellow;
+  color: black;
 }
 
 .btnOutline:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: white;
+  background: #e6e600;
+  border-color: #e6e600;
   transform: scale(1.04);
 }
 
