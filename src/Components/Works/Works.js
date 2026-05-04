@@ -1,18 +1,16 @@
 import { useState } from 'react'
 import p1 from '../../assets/portfolio-1.png'
 import p2 from '../../assets/portfolio-2.png'
-import p3 from '../../assets/portfolio-3.png'
 import p4 from '../../assets/portfolio-4.png'
 import p5 from '../../assets/portfolio-5.png'
-import p6 from '../../assets/portfolio-6.png'
 import './Works.css'
 
 const projects = [
-   { id: 1, src: p1, title: 'shopper', desc: 'React.js web application',url:'https://shopper-frontend-roan.vercel.app' },
-   { id: 6, src: p6, title: 'Project Six', desc: 'Responsive website design' },
-   { id: 3, src: p3, title: 'Project Three', desc: 'UI/UX design & development' },
-  { id: 2, src: p2, title: 'Job_portal', desc: 'Full stack MERN project',url:'' },
-  { id: 4, src: p4, title: 'Quick_Chat', desc: 'Frontend React project', url: 'https://chat-app-taupe-one-98.vercel.app' },
+   { id: 1, src: p1, title: 'shopper', desc: 'Ecommerce application',url:'https://shopper-frontend-roan.vercel.app' },
+  //  { id: 6, src: p6, title: 'Project Six', desc: 'Responsive website design' },
+  //  { id: 3, src: p3, title: 'Project Three', desc: 'UI/UX design & development' },
+  { id: 2, src: p2, title: 'Job_portal', desc: 'Job portal application',url:'https://job-portal-xbcs.vercel.app/' },
+  { id: 4, src: p4, title: 'Quick_Chat', desc: 'chat application', url: 'https://chat-app-taupe-one-98.vercel.app/login' },
   { id: 5, src: p5, title: 'Scalable_cloud service', desc: 'Java backend application' },
 ]
 
